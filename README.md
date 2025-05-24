@@ -26,7 +26,7 @@
 
 ## Цитата для вдохновения
 
-<p>If you can't explain it simply, you don't understand it well enough.</p>
-<p>Albert Einstein</p>
+<p>The degree of responsibility you take for your life determines how much change you can create in it.</p>
+<p>Celestine Chua</p>
 
 Обновляется каждый час!
