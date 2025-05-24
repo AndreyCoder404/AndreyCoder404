@@ -26,7 +26,7 @@
 
 ## Цитата для вдохновения
 
-<p>Life is about accepting the challenges along the way, choosing to keep moving forward, and savoring the journey.</p>
-<p>Roy T. Bennett</p>
+<p>The quicker you let go of old cheese, the sooner you find new cheese.</p>
+<p>Spencer Johnson</p>
 
 Обновляется каждый час!
