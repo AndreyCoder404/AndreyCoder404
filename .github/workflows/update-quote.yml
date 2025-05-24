@@ -9,18 +9,23 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Install jq
-        run: sudo apt-get update && sudo apt-get install -y jq
-      - name: Fetch random quote
+      - name: Install jq and translate-shell
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
+          sudo apt-get install -y translate-shell
+      - name: Fetch random quote and translate
         run: |
           quote=$(curl -s "https://zenquotes.io/api/random")
           if [ -z "$quote" ]; then
             echo "Ошибка: Не удалось получить цитату, используем запасную цитату"
-            echo -e "Stay curious and keep learning!\nUnknown Author" > quote.txt
+            echo -e "Оставайтесь любопытными и продолжайте учиться!\nНеизвестный автор" > quote.txt
           else
             QUOTE=$(echo "$quote" | jq -r '.[0].q')
             AUTHOR=$(echo "$quote" | jq -r '.[0].a')
-            echo -e "$QUOTE\n$AUTHOR" > quote.txt
+            TRANSLATED_QUOTE=$(trans -b :ru "$QUOTE")
+            TRANSLATED_AUTHOR=$(trans -b :ru "$AUTHOR")
+            echo -e "$TRANSLATED_QUOTE\n$TRANSLATED_AUTHOR" > quote.txt
           fi
       - name: Inject quote into README
         run: |
