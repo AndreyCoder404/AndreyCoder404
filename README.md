@@ -26,7 +26,7 @@
 
 ## Цитата для вдохновения
 
-<p>Peace is not the absence of conflict, but the ability to cope with it.</p>
-<p>Unknown</p>
+<p>Life is about accepting the challenges along the way, choosing to keep moving forward, and savoring the journey.</p>
+<p>Roy T. Bennett</p>
 
 Обновляется каждый час!
