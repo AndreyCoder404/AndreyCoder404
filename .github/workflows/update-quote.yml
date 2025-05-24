@@ -27,9 +27,9 @@ jobs:
           if [ -f quote.txt ]; then
             QUOTE=$(sed -n '1p' quote.txt | sed 's/"/\\"/g')
             AUTHOR=$(sed -n '2p' quote.txt | sed 's/"/\\"/g')
-            sed -i "s|{inspiration_quote}|$QUOTE|" README.template.md
-            sed -i "s|{inspiration_author}|$AUTHOR|" README.template.md
-            cp README.template.md README.md
+            sed -i "s|{inspiration_quote}|$QUOTE|" README.md
+            sed -i "s|{inspiration_author}|$AUTHOR|" README.md
+            cp README.md README.md
           else
             echo "Ошибка: Файл quote.txt не найден"
             exit 1
