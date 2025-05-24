@@ -26,7 +26,7 @@
 
 ## Цитата для вдохновения
 
-<p>{inspiration_quote}</p>
-<p>{inspiration_author}</p>
+<p>If you can't explain it simply, you don't understand it well enough.</p>
+<p>Albert Einstein</p>
 
 Обновляется каждый час!
