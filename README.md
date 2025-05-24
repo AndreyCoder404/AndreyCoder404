@@ -26,7 +26,7 @@
 
 ## Цитата для вдохновения
 
-<p>The quicker you let go of old cheese, the sooner you find new cheese.</p>
-<p>Spencer Johnson</p>
+<p>When we have our body and mind in order, everything else will exist in the right place, in the right way.</p>
+<p>Shunryu Suzuki</p>
 
 Обновляется каждый час!
