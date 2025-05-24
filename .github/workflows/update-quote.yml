@@ -36,50 +36,8 @@ jobs:
           fi
       - name: Commit and push changes
         run: |
-          git config user.name "GitHub Aname: Update Quote in README
-on:
-  schedule:
-    - cron: '0 * * * *' # Запускается каждый час (например, 13:00, 14:00 и т.д.)
-  workflow_dispatch: # Позволяет запускать вручную
-jobs:
-  update-readme:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-      - name: Install jq
-        run: sudo apt-get update && sudo apt-get install -y jq
-      - name: Fetch random quote
-        run: |
-          quote=$(curl -s "https://zenquotes.io/api/random")
-          if [ -z "$quote" ]; then
-            echo "Ошибка: Не удалось получить цитату, используем запасную цитату"
-            echo -e "Stay curious and keep learning!\nUnknown Author" > quote.txt
-          else
-            QUOTE=$(echo "$quote" | jq -r '.[0].q')
-            AUTHOR=$(echo "$quote" | jq -r '.[0].a')
-            echo -e "$QUOTE\n$AUTHOR" > quote.txt
-          fi
-      - name: Inject quote into README
-        run: |
-          if [ -f quote.txt ]; then
-            QUOTE=$(sed -n '1p' quote.txt | sed 's/"/\\"/g')
-            AUTHOR=$(sed -n '2p' quote.txt | sed 's/"/\\"/g')
-            sed -i "s|{inspiration_quote}|$QUOTE|" README.template.md
-            sed -i "s|{inspiration_author}|$AUTHOR|" README.template.md
-            cp README.template.md README.md
-          else
-            echo "Ошибка: Файл quote.txt не найден"
-            exit 1
-          fi
-      - name: Commit and push changes
-        run: |
           git config user.name "GitHub Action"
           git config user.email "action@github.com"
           git add README.md
           git diff --quiet || git commit -m "Обновление цитаты в README"
-          git push https://${{ secrets.PAT_TOKEN }}@github.com/AndreyCoder404/AndreyCoder404.git HEAD:mainction"
-          git config user.email "action@github.com"
-          git add README.md
-          git diff --quiet || git commit -m "Обновление цитаты в README"
-          git push
+          git push https://${{ secrets.PAT_TOKEN }}@github.com/AndreyCoder404/AndreyCoder404.git HEAD:main
