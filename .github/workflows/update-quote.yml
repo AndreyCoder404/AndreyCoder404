@@ -1,0 +1,35 @@
+name: Update Quote in README
+on:
+  schedule:
+    - cron: '0 * * * *' # Обновление каждый час (11:00, 12:00 и т.д. по +07)
+  workflow_dispatch: # Позволяет запускать вручную
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
+      - name: Fetch random quote
+        run: |
+          quote=$(curl -s "https://api.quotable.io/random")
+          QUOTE=$(echo "$quote" | jq -r '.content')
+          AUTHOR=$(echo "$quote" | jq -r '.author')
+          echo -e "$QUOTE\n$AUTHOR" > quote.txt
+      - name: Inject quote into README
+        run: |
+          if [ -f quote.txt ]; then
+            QUOTE=$(sed -n '1p' quote.txt)
+            AUTHOR=$(sed -n '2p' quote.txt)
+            sed -i "s|{inspiration_quote}|$QUOTE|" README.template.md
+            sed -i "s|{inspiration_author}|$AUTHOR|" README.template.md
+            cp README.template.md README.md
+          fi
+      - name: Commit and push changes
+        run: |
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+          git add README.md
+          git diff --quiet || git commit -m "Update quote in README at $(date -u)"
+          git push
