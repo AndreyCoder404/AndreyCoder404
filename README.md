@@ -26,7 +26,7 @@
 
 ## Цитата для вдохновения
 
-<p>{inspiration_quote}</p>
-<p>{inspiration_author}</p>
+<p>Life is about accepting the challenges along the way, choosing to keep moving forward, and savoring the journey.</p>
+<p>Roy T. Bennett</p>
 
 Обновляется каждый час!
