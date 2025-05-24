@@ -13,14 +13,15 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y jq
       - name: Fetch random quote
         run: |
-          quote=$(curl -s "https://api.quotable.io/random")
+          quote=$(curl -s "https://zenquotes.io/api/random")
           if [ -z "$quote" ]; then
-            echo "Ошибка: Не удалось получить цитату"
-            exit 1
+            echo "Ошибка: Не удалось получить цитату, используем запасную цитату"
+            echo -e "Stay curious and keep learning!\nUnknown Author" > quote.txt
+          else
+            QUOTE=$(echo "$quote" | jq -r '.[0].q')
+            AUTHOR=$(echo "$quote" | jq -r '.[0].a')
+            echo -e "$QUOTE\n$AUTHOR" > quote.txt
           fi
-          QUOTE=$(echo "$quote" | jq -r '.content')
-          AUTHOR=$(echo "$quote" | jq -r '.author')
-          echo -e "$QUOTE\n$AUTHOR" > quote.txt
       - name: Inject quote into README
         run: |
           if [ -f quote.txt ]; then
