@@ -1,7 +1,7 @@
 name: Update Quote in README
 on:
   schedule:
-    - cron: '0 * * * *' # Обновление каждый час (11:00, 12:00 и т.д. по +07)
+    - cron: '0 * * * *' # Запускается каждый час (например, 13:00, 14:00 и т.д.)
   workflow_dispatch: # Позволяет запускать вручную
 jobs:
   update-readme:
@@ -14,22 +14,29 @@ jobs:
       - name: Fetch random quote
         run: |
           quote=$(curl -s "https://api.quotable.io/random")
+          if [ -z "$quote" ]; then
+            echo "Ошибка: Не удалось получить цитату"
+            exit 1
+          fi
           QUOTE=$(echo "$quote" | jq -r '.content')
           AUTHOR=$(echo "$quote" | jq -r '.author')
           echo -e "$QUOTE\n$AUTHOR" > quote.txt
       - name: Inject quote into README
         run: |
           if [ -f quote.txt ]; then
-            QUOTE=$(sed -n '1p' quote.txt)
-            AUTHOR=$(sed -n '2p' quote.txt)
+            QUOTE=$(sed -n '1p' quote.txt | sed 's/"/\\"/g')
+            AUTHOR=$(sed -n '2p' quote.txt | sed 's/"/\\"/g')
             sed -i "s|{inspiration_quote}|$QUOTE|" README.template.md
             sed -i "s|{inspiration_author}|$AUTHOR|" README.template.md
             cp README.template.md README.md
+          else
+            echo "Ошибка: Файл quote.txt не найден"
+            exit 1
           fi
       - name: Commit and push changes
         run: |
           git config user.name "GitHub Action"
           git config user.email "action@github.com"
           git add README.md
-          git diff --quiet || git commit -m "Update quote in README at $(date -u)"
+          git diff --quiet || git commit -m "Обновление цитаты в README"
           git push
