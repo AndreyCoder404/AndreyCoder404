@@ -26,7 +26,7 @@
 
 ## Цитата для вдохновения
 
-<p>The quicker you let go of old cheese, the sooner you find new cheese.</p>
-<p>Spencer Johnson</p>
+<p>Opportunity is missed by most people because it is dressed in overalls and looks like work.</p>
+<p>Thomas Edison</p>
 
 Обновляется каждый час!
