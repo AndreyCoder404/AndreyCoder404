@@ -26,7 +26,7 @@
 
 ## Цитата для вдохновения
 
-<p>When we have our body and mind in order, everything else will exist in the right place, in the right way.</p>
-<p>Shunryu Suzuki</p>
+<p>Opportunity is missed by most people because it is dressed in overalls and looks like work.</p>
+<p>Thomas Edison</p>
 
 Обновляется каждый час!
