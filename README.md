@@ -21,23 +21,12 @@
 
 <details>
 <summary>Ещё подробности</summary>
-<p>
-I'm a beginner developer passionate about building useful apps for self-improvement and healthy living. 💻
-
-🚀 [My Project](https://github.com/AndreyCoder404/healthylifebot/blob/main/README.markdown):
-
-[HealthyLifeBot](https://github.com/AndreyCoder404/healthylifebot/blob/main/README.markdown): An open-source Telegram app for healthy living, where I develop personalized recipes, workouts, and podcasts using Go, Python, Telegram Bot API, and neural networks. Join the project!
-GitHub https://github.com/AndreyCoder404/healthylifebot/blob/main/README.markdown
-
-
-📫 Get in Touch
-
-GitHub: [@AndreyCoder404](https://github.com/AndreyCoder404)</p>
+<p>Я начинающий разработчик, который освоил эти технологии в рамках курса "Go разработчик" на Яндекс.Практикуме. Активно развиваю навыки в DevOps и интеграции нейросетей!</p>
 </details>
 
 ## Цитата для вдохновения
 
-<p>Падение - это не неудача. Неудача происходит, когда вы остаетесь там, где упали.</p>
-<p>Сократ</p>
+<p>Никакое сожаление не может изменить прошлое, и никакое количество тревожных не может изменить будущее.</p>
+<p>Рой Т. Беннетт</p>
 
 Обновляется каждый час!
