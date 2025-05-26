@@ -24,9 +24,11 @@
 <p>
 I'm a beginner developer passionate about building useful apps for self-improvement and healthy living. 💻
 
-🚀 My Project:
+🚀 [My Project](https://github.com/AndreyCoder404/healthylifebot/blob/main/README.markdown):
 
-HealthyLifeBot: An open-source Telegram app for healthy living, where I develop personalized recipes, workouts, and podcasts using Go, Python, Telegram Bot API, and neural networks. Join the project! GitHub
+[HealthyLifeBot](https://github.com/AndreyCoder404/healthylifebot/blob/main/README.markdown): An open-source Telegram app for healthy living, where I develop personalized recipes, workouts, and podcasts using Go, Python, Telegram Bot API, and neural networks. Join the project!
+GitHub https://github.com/AndreyCoder404/healthylifebot/blob/main/README.markdown
+
 
 📫 Get in Touch
 
