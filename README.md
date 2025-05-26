@@ -21,7 +21,16 @@
 
 <details>
 <summary>Ещё подробности</summary>
-<p>Я начинающий разработчик, который освоил эти технологии в рамках курса "Go разработчик" на Яндекс.Практикуме. Активно развиваю навыки в DevOps и интеграции нейросетей!</p>
+<p>
+I'm a beginner developer passionate about building useful apps for self-improvement and healthy living. 💻
+
+🚀 My Project:
+
+HealthyLifeBot: An open-source Telegram app for healthy living, where I develop personalized recipes, workouts, and podcasts using Go, Python, Telegram Bot API, and neural networks. Join the project! GitHub
+
+📫 Get in Touch
+
+GitHub: [@AndreyCoder404](https://github.com/AndreyCoder404)</p>
 </details>
 
 ## Цитата для вдохновения
