@@ -4,7 +4,7 @@
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white)
 ![REST API](https://img.shields.io/badge/REST_API-FF6C37?style=flat&logo=rest&logoColor=white)
 ![HTTP](https://img.shields.io/badge/HTTP-005C84?style=flat&logo=httpie&logoColor=white)
 ![HTML](https://img.shields.io/badge/HTML-5E8B7E?style=flat&logo=html5&logoColor=white)
@@ -20,9 +20,7 @@
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
 
 <details>
-<summary>Ещё подробности</summary>
-<p>Я начинающий разработчик, который освоил эти технологии в рамках курса "Go разработчик" на Яндекс.Практикуме. Активно развиваю навыки в DevOps и интеграции нейросетей!</p>
-</details>
+<summary> Ещё подробности </summary>
 
 ## Цитата для вдохновения
 
@@ -30,3 +28,4 @@
 <p>Наполеон Хилл</p>
 
 Обновляется каждый час!
+</details>
