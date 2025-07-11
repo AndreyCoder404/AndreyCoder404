@@ -19,10 +19,6 @@
 ![YAML](https://img.shields.io/badge/YAML-FF9900?style=flat&logo=yaml&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
 
-<details>
-<summary>Ещё подробности</summary>
-<p>Я начинающий разработчик, который освоил эти технологии в рамках курса "Go разработчик" на Яндекс.Практикуме. Активно развиваю навыки в DevOps и интеграции нейросетей!</p>
-</details>
 
 ## Цитата для вдохновения
 
